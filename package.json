@@ -2,6 +2,7 @@
   "name": "base",
   "version": "0.0.0",
   "scripts": {
+    "heroku-prebuild": "npm config set legacy-peer-deps",
     "all": "npm run test && npm run lint && npm run build",
     "build": "ng build --configuration production",
     "engines": {
