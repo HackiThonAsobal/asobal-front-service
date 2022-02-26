@@ -38,21 +38,21 @@ export class ProfileComponent implements OnInit, OnDestroy {
     })
 
     console.log(sessionStorage.getItem('token'))
-    // if (!sessionStorage.getItem('token') && sessionStorage.getItem('token') !== null) {
-    //   this.getProfile();
-    // } else {
-    //   this.activatedRoute.queryParams.subscribe(params => {
-    //     this.token = params['token'];
-    //     if (params['token'] !== null) {
-    //       sessionStorage.setItem('token', params['token']);
-    //     }
-    //   });
-    //   if (!this.token) {
-    //     this.router.navigate(['/login']);
-    //   } else {
-    //     this.getProfile();
-    //   }
-    // }
+    if (!sessionStorage.getItem('token') && sessionStorage.getItem('token') !== null) {
+      this.getProfile();
+    } else {
+      this.activatedRoute.queryParams.subscribe(params => {
+        this.token = params['token'];
+        if (params['token'] !== null) {
+          sessionStorage.setItem('token', params['token']);
+        }
+      });
+      if (!this.token) {
+        this.router.navigate(['/login']);
+      } else {
+        this.getProfile();
+      }
+    }
   }
 
   ngOnDestroy(): void {
