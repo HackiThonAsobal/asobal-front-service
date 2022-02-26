@@ -8,7 +8,7 @@
       "node": "16.x",
       "npm": "7.x"
     },
-    "heroku-prebuild": "npm config set legacy-peer-deps --save",
+    "heroku-prebuild": "npm config set legacy-peer-deps true",
     "doc": "rimraf reports/Documentation && compodoc --theme stripe -p tsconfig.compodoc.json -d reports/Documentation -n base",
     "e2e": "ng e2e",
     "lint": "ng lint base",
