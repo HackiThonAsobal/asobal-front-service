@@ -2,13 +2,13 @@
   "name": "base",
   "version": "0.0.0",
   "scripts": {
-    "heroku-prebuild": "npm config set legacy-peer-deps",
     "all": "npm run test && npm run lint && npm run build",
     "build": "ng build --configuration production",
     "engines": {
       "node": "16.x",
       "npm": "7.x"
     },
+    "heroku-prebuild": "npm config set legacy-peer-deps --save",
     "doc": "rimraf reports/Documentation && compodoc --theme stripe -p tsconfig.compodoc.json -d reports/Documentation -n base",
     "e2e": "ng e2e",
     "lint": "ng lint base",
