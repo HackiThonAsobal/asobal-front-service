@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 export class ProfileService {
   private BASE_URL = this.configService.config.globalConfig.urlApp;
   private PROFILE = this.BASE_URL + environment.PROFILE;
-  public profile: BehaviorSubject<any> = new BehaviorSubject<any>({});
+  public profile: BehaviorSubject<any> = new BehaviorSubject<any>(null);
   profile$ = this.profile.asObservable();
 
   constructor(
