@@ -16,7 +16,10 @@
     "test": "ng test base --no-watch --code-coverage && npm run lint",
     "test-nowatch": "npm run lint && ng test base --watch=false --browsers ChromeHeadless",
     "heroku-postbuild": "ng build — prod",
-    "engines": { "node": "16.10.0", "npm": "7.24.0" }
+    "engines": {
+      "node": "16.x",
+       "npm": "7.x" 
+      }
   },
   "private": true,
   "dependencies": {
