@@ -5,13 +5,15 @@
 @import '../styles/progress-spinner';
 
 @import '~@angular/material/theming';
-$custom-typography: mat-typography-config($font-family: '"Montserrat", sans-serif;');
+$asobal-fonts: "Montserrat", sans-serif;
+$custom-typography: mat-typography-config($font-family: $asobal-fonts);
 @include mat-core($custom-typography);
 
 // GENERAL
 html {
   min-height: 100%;
   position: relative;
+  font-family: $asobal-fonts;
 }
 
 body {
