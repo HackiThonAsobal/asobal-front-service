@@ -2,7 +2,6 @@
   "name": "base",
   "version": "0.0.0",
   "scripts": {
-    "heroku-prebuild": "npm i --force",
     "all": "npm run test && npm run lint && npm run build",
     "build": "ng build --configuration production",
     "doc": "rimraf reports/Documentation && compodoc --theme stripe -p tsconfig.compodoc.json -d reports/Documentation -n base",
@@ -16,7 +15,10 @@
     "start:proxy:mock:server": "concurrently  -k -s first \"npm run mock:server\" \"npm run start\"",
     "test": "ng test base --no-watch --code-coverage && npm run lint",
     "test-nowatch": "npm run lint && ng test base --watch=false --browsers ChromeHeadless",
-    "heroku-postbuild": "npm run build"
+    "engines": {
+      "node": "16.x",
+      "npm": "7.x"
+    }
   },
   "private": true,
   "dependencies": {
