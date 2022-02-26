@@ -24,6 +24,7 @@ import { FeedComponent } from './components/feed/feed.component';
 import { DialogCommentComponent } from './components/dialog-comment/dialog-comment.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
+import { CustomDateFormatDirective } from './directives/custom-date-format.directive';
 
 /**
  * appInt
@@ -51,7 +52,8 @@ registerLocaleData(localePt, 'pt');
     FeedComponent,
     DialogCommentComponent,
     SnackbarComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    CustomDateFormatDirective
   ],
   imports: [
     AppRoutingModule,

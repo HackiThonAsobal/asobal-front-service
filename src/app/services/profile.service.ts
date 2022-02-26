@@ -27,6 +27,12 @@ export class ProfileService {
     return this.http.put<any>(this.PROFILE, body);
   }
 
+  public refreshProfile(): void {
+    this.postProfile().subscribe(data => {
+      this.sendProfile(data);
+    })
+  }
+
   sendProfile(profile: any) {
     this.profile.next(profile);
   }

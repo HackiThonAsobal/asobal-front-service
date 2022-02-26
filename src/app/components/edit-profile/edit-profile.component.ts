@@ -4,8 +4,12 @@ import { TeamService } from 'src/app/services/team.service';
 import { ProfileService } from 'src/app/services/profile.service';
 import { IProfileResponse } from 'src/app/models/profile-response.interface';
 import { Router } from '@angular/router';
-import { combineLatest, forkJoin } from 'rxjs';
+import { combineLatest } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
+
+import * as _moment from 'moment';
+import { Moment } from 'moment';
+const moment = _moment;
 
 @Component({
   selector: 'app-edit-profile',
@@ -46,7 +50,7 @@ export class EditProfileComponent implements OnInit {
   }
 
   private setForm() {
-
+    const date = moment(this.profileData.birthDate).format('YYYY-MM-DD')
     this.editForm.get('name').setValue(this.profileData.name);
     this.editForm
       .get('selectedTeam')
@@ -55,22 +59,24 @@ export class EditProfileComponent implements OnInit {
       .get('selectedGender')
       .setValue(this.findGender(this.profileData.gender));
     this.editForm.get('lastName').setValue(this.profileData.lastName);
-    this.editForm.get('birthDate').setValue(this.profileData.birthDate+'T23:00:00.000Z');
+    this.editForm.get('date').setValue(date);
     this.editForm
       .get('selectedTeam')
       .setValue(this.findTeam(this.profileData.teamId));
   }
 
   editProfile() {
+    const date = moment(this.editForm.controls['date'].value).format('YYYY-MM-DD')
     const body = {
       name: this.editForm.controls['name'].value,
       lastName: this.editForm.controls['lastName'].value,
       gender: this.editForm.controls['selectedGender'].value,
       teamId: this.editForm.controls['selectedTeam'].value,
-      birthDate: this.editForm.controls['date'].value,
+      birthDate: date,
     };
     this.profileService.putProfile(body).subscribe(
       () => {
+        this.profileService.refreshProfile();
         this.router.navigate(['/asobal']);
       },
       (err) => {
