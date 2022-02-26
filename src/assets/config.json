@@ -2,7 +2,7 @@
   "globalConfig": {
     "urlApp": "https://asobal-back-service.herokuapp.com",
     "urlAppLogin": "https://asobal-login-service.herokuapp.com",
-    "urlAppNotification": "https://asobal-notification-service.herokuapp.com",
+    "urlAppNotification": "https://asobal-notification-service.herokuapp.com/v2",
     "language": "es"
   }
 }

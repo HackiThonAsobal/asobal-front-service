@@ -1,0 +1,73 @@
+
+$message-border: #169dd2;
+$message-background: #16AFD2;
+$text-color: #fff;
+
+.snackbar {
+  border-radius: 2px;
+  padding: 1.25rem;
+  min-width: 22rem;
+  background-color: $message-background;
+    border: solid 1px $message-border;
+    .action-button {
+      color: $message-border;
+      cursor: pointer;
+    }
+    .close {
+      color: $message-border;
+    }
+
+  .left-icon {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    .icon {
+      font-family: "Roboto";
+      font-size: 1.5rem;
+      margin-left: -5px;
+    }
+  }
+
+  .snackbar-container {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+  }
+
+  .snackbar-title {
+    //font-family: "SantanderText-Bd", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  .snackbar-subtitle {
+    //font-family: "Santander Text", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $text-color;
+  }
+
+  .snackbar-actions {
+    justify-self: end;
+  }
+
+  .close {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    min-width: 0;
+    padding: 0;
+    .icon-close {
+      font-size: x-large;
+      font-weight: bold !important;
+    }
+  }
+}
