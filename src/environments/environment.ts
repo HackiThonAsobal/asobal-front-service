@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
   LOGIN: '/login',
-  PROFILE: '/profile'
+  PROFILE: '/profile',
+  FEED: '/feed',
+  SCORE: '/score',
 };
 
 /*
