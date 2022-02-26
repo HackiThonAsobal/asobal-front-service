@@ -8,6 +8,7 @@ export const environment = {
   PROFILE: '/profile',
   FEED: '/feed',
   SCORE: '/score',
+  TEAMS: '/teams'
 };
 
 /*

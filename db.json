@@ -65,5 +65,134 @@
       ]
     }
   ],
-  "score": {}
+  "score": {},
+  "teams": [
+    {
+      "id": "6219708d8fcd7a2ed5720f9f",
+      "name": "Bidasoa Irun",
+      "logo": "bidasoaIrun.png",
+      "score": 26,
+      "position": 2
+    },
+    {
+      "id": "621970e98fcd7a2ed5720fa0",
+      "name": "Barça",
+      "logo": "barca.png",
+      "score": 34,
+      "position": 1
+    },
+    {
+      "id": "621970fe8fcd7a2ed5720fa1",
+      "name": "Fraikin BM. Granollers",
+      "logo": "granollers.png",
+      "score": 24,
+      "position": 3
+    },
+    {
+      "id": "6219710c8fcd7a2ed5720fa2",
+      "name": "BM. Logroño La Rioja",
+      "logo": "logroño.png",
+      "score": 22,
+      "position": 4
+    },
+    {
+      "id": "621971148fcd7a2ed5720fa3",
+      "name": "Frigoríficos Morrazo",
+      "logo": "morrazo.png",
+      "score": 21,
+      "position": 5
+    },
+    {
+      "id": "6219711d8fcd7a2ed5720fa4",
+      "name": "BM. Benidorm",
+      "logo": "benidorm.png",
+      "score": 19,
+      "position": 6
+    },
+    {
+      "id": "621971298fcd7a2ed5720fa5",
+      "name": "Bada Huesca",
+      "logo": "huesca.png",
+      "score": 17,
+      "position": 7
+    },
+    {
+      "id": "621971338fcd7a2ed5720fa6",
+      "name": "Incarlopsa Cuenca",
+      "logo": "cuenca.png",
+      "score": 17,
+      "position": 8
+    },
+    {
+      "id": "6219713c8fcd7a2ed5720fa7",
+      "name": "Viveros Herol BM. Nava",
+      "logo": "herol.png",
+      "score": 16,
+      "position": 9
+    },
+    {
+      "id": "621971448fcd7a2ed5720fa8",
+      "name": "Helvetia Anaitasuna",
+      "logo": "anaitasuna.png",
+      "score": 15,
+      "position": 10
+    },
+    {
+      "id": "6219714d8fcd7a2ed5720fa9",
+      "name": "Bathco BM. Torrelavega",
+      "logo": "torrelavega.png",
+      "score": 15,
+      "position": 11
+    },
+    {
+      "id": "621971568fcd7a2ed5720faa",
+      "name": "Unicaja Banco Sinfín",
+      "logo": "unicaja.png",
+      "score": 15,
+      "position": 12
+    },
+    {
+      "id": "621971618fcd7a2ed5720fab",
+      "name": "Ángel Ximénez Puente Genil",
+      "logo": "genil.png",
+      "score": 15,
+      "position": 13
+    },
+    {
+      "id": "6219716d8fcd7a2ed5720fac",
+      "name": "ABANCA Ademar León",
+      "logo": "abanca.png",
+      "score": 14,
+      "position": 14
+    },
+    {
+      "id": "621971758fcd7a2ed5720fad",
+      "name": "Recoletas At. Valladolid",
+      "logo": "valladolid.png",
+      "score": 12,
+      "position": 15
+    },
+    {
+      "id": "6219717e8fcd7a2ed5720fae",
+      "name": "BM. Iberoquinoa Antequera",
+      "logo": "antequera.png",
+      "score": 4,
+      "position": 16
+    },
+    {
+      "id": "5anCk-E"
+    },
+    {
+      "id": "T1gNapE"
+    },
+    {
+      "id": "pfb_sV0"
+    },
+    {
+      "id": "r3hmFmk"
+    },
+    {
+      "id": "GkouPEH"
+    }
+  ]
 }

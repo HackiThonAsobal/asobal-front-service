@@ -41,16 +41,9 @@ export class ProfileComponent implements OnInit {
   getProfile() {
     this.profileService.postProfile().subscribe(
       (data: IProfileResponse) => {
-        data = {
-          "name": "Alegna",
-          "lastName":"Martinez",
-          "gender": "",
-          "teamId": "",
-          "birthDate": "",
-          "type": ""
-        }
         this.profileData = data;
         console.log('profileData', this.profileData);
+        this.profileService.sendProfile(this.profileData);
         if(this.profileData.teamId === '') {
           this.router.navigate(['/asobal/profile']);
         }

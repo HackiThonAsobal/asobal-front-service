@@ -1,19 +1,38 @@
-<p>Perfil</p>
-
-<form [formGroup]="editForm" class="edit-form" >    
-    <mat-form-field appearance="legacy">
+<h1>Perfil</h1>
+<form [formGroup]="editForm" class="edit-form">
+    <mat-form-field class="medium-width" appearance="legacy">
         <mat-label>Nombre</mat-label>
         <input type="email" matInput formControlName="name" autocomplete="off">
         <mat-error *ngIf="editForm.get('name').hasError('required')">
             El nombre es <strong>requerido</strong>
         </mat-error>
     </mat-form-field>
-    <mat-form-field appearance="legacy">
+    <mat-form-field class="medium-width" appearance="legacy">
         <mat-label>Apellidos</mat-label>
         <input type="email" matInput formControlName="lastName" autocomplete="off">
         <mat-error *ngIf="editForm.get('lastName').hasError('required')">
             El apellido es <strong>requerido</strong>
         </mat-error>
     </mat-form-field>
-    <button mat-raised-button (click)="editProfile()" [disabled]="editForm.invalid" class="button-login">Aceptar</button>
+    <mat-form-field class="medium-width" appearance="legacy">
+        <mat-label>Fecha de nacimiento</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="legacy">
+        <mat-label>Sexo</mat-label>
+        <mat-select formControlName="selectedGender">
+            <mat-option [value]="option.id" *ngFor="let option of genders">{{ option.description }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="legacy">
+        <mat-label>Equipo</mat-label>
+        <mat-select formControlName="selectedTeam">
+            <mat-option [value]="option.id" *ngFor="let option of teams">{{ option.name }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    
+    <button mat-raised-button (click)="editProfile()" [disabled]="editForm.invalid"
+        class="button-login">Aceptar</button>
 </form>
