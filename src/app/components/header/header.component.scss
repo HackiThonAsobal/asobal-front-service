@@ -1,0 +1,14 @@
+.mat-toolbar {
+  background: #002c58;
+  height: 130px;
+}
+
+.logo {
+  margin: 0 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 50%;
+  }
+}

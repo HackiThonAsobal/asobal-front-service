@@ -1,0 +1,26 @@
+<div class="content-login">
+    <div class="agrup-element">
+        <img class="img-logo" src="assets/img/logo.png" alt="Logo"/>
+    </div>
+    <div class="agrup-element" *ngIf="!sendEmail">
+        <h1>Bienvenido</h1>
+        <form [formGroup]="loginForm" class="login-form" >    
+            <mat-form-field appearance="legacy" class="login-full-width">
+                <mat-label>Ingrese su dirección de correo electrónico</mat-label>
+                <input type="email" matInput formControlName="email" placeholder="example@example.com" autocomplete="off">
+                <mat-error *ngIf="loginForm.get('email').hasError('email') && !loginForm.get('email').hasError('required')">
+                    Por favor, introduce una dirección de correo electrónico válida
+                </mat-error>
+                <mat-error *ngIf="loginForm.get('email').hasError('required')">
+                    El correo electrónico es <strong>requerido</strong>
+                </mat-error>
+            </mat-form-field>
+            <button mat-raised-button (click)="login()" [disabled]="loginForm.invalid" class="button-login">Enviar un enlace</button>
+        </form>
+    </div>
+    <div class="agrup-element" *ngIf="sendEmail">
+        <h1>Correo electrónico enviado</h1>
+        <h3>Por favor revise su bandeja de entrada para su enlace de inicio de sesión</h3>        
+    </div>
+    
+</div>

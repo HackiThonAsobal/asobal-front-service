@@ -1,0 +1,17 @@
+<mat-card *ngFor="let feed of feeds; let i = index" (mouseout)="focusOutFunction($event,feed['id'], feed['type'])">
+    <div class="header-feed" >
+        <h4>{{feed['title']}}</h4>
+        <div class="data" [id]="feed['id']" (blur)="focusFunction(feed['id'])">
+            <div class="date">Fecha: {{feed['publicationDate']}}</div>
+            <div class="cat">Categoria: {{feed['type']}}</div>
+        </div>
+    </div>
+    <p>
+        {{feed['description']}}
+    </p>
+    <div class="agrup-img">
+        <img [src]="feed['image']" alt="Imagen" />
+    </div>
+    <mat-icon [matBadge]="feed['likes']" matBadgeColor="warn">pan_tool</mat-icon>
+    <mat-icon *ngIf="!feed['comments']" (click)="openDialog(feed['comments'])"> insert_comment</mat-icon>
+</mat-card>

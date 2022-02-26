@@ -1,0 +1,15 @@
+.content-principal {
+  display: flex;
+  margin: 50px 150px;
+}
+.agrup-element {
+  display: flex;
+}
+.grup-menu {
+  width: 250px;
+}
+@media screen and (max-width: 900px) {
+  .content-principal {
+    margin: 50px;
+  }
+}
