@@ -17,11 +17,12 @@ body {
 }
 
 $color-01: #002c58; 
+$color-02: #00afd2;
 
 .mat-spinner circle {
   stroke: $color-01;
 }
 
 .mat-badge-warn .mat-badge-content {
-  background: #00afd2;
+  background: $color-02;
 }
