@@ -8,7 +8,7 @@
       "node": "16.x",
       "npm": "7.x"
     },
-    "heroku-prebuild": "npm install --force",
+    "heroku-prebuild": "npm i @angular/cli && npm install --force",
     "doc": "rimraf reports/Documentation && compodoc --theme stripe -p tsconfig.compodoc.json -d reports/Documentation -n base",
     "e2e": "ng e2e",
     "lint": "ng lint base",
