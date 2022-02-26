@@ -1,0 +1,27 @@
+.content-login {
+  justify-content: center;
+  display: flex;
+  margin-top: 10%;
+  align-items: center;
+
+  .agrup-element {
+    margin: 0 40px;
+  }
+}
+
+.login-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.login-full-width {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .content-login {
+    align-items: center;
+    flex-direction: column;
+  }
+}

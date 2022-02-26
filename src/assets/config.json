@@ -1,0 +1,7 @@
+{
+    "globalConfig": {
+        "urlApp": "http://localhost:3000",
+        "language": "es"
+    }
+    
+}
