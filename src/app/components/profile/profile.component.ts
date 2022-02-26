@@ -20,6 +20,7 @@ export class ProfileComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    console.log(sessionStorage.getItem('token'))
     if (!sessionStorage.getItem('token') && sessionStorage.getItem('token') !== null) {
       this.getProfile();
     } else {

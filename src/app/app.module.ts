@@ -5,7 +5,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TokenInterceptor } from './auth/token.interceptor';
-import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ConfigService } from './services/config.service';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -17,11 +17,11 @@ import localeEn from '@angular/common/locales/en';
 import localeEs from '@angular/common/locales/es';
 import localeDe from '@angular/common/locales/de';
 import localePt from '@angular/common/locales/pt';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { FeedComponent } from './components/feed/feed.component';
+import { DialogCommentComponent } from './components/dialog-comment/dialog-comment.component';
 
 /**
  * appInt
@@ -46,7 +46,8 @@ registerLocaleData(localePt, 'pt');
     LoginComponent,
     ProfileComponent,
     MenuComponent,
-    FeedComponent
+    FeedComponent,
+    DialogCommentComponent
   ],
   imports: [
     AppRoutingModule,

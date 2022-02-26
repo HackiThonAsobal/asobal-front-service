@@ -13,8 +13,7 @@
     "start": "ng serve base",
     "start:proxy:mock:server": "concurrently  -k -s first \"npm run mock:server\" \"npm run start\"",
     "test": "ng test base --no-watch --code-coverage && npm run lint",
-    "test-nowatch": "npm run lint && ng test base --watch=false --browsers ChromeHeadless",
-    "create": "ng g c feed"
+    "test-nowatch": "npm run lint && ng test base --watch=false --browsers ChromeHeadless"
   },
   "private": true,
   "dependencies": {

@@ -6,7 +6,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
 import { ConfigService } from './services/config.service';
-import { APP_INITIALIZER } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 describe('AppComponent', () => {

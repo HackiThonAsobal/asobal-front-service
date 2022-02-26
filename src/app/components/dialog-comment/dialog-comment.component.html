@@ -1,0 +1,11 @@
+<p>Escribe tu comentario</p>
+<div mat-dialog-content>
+    <mat-form-field appearance="legacy">
+        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1"
+            cdkAutosizeMaxRows="5"></textarea>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancelar</button>
+    <button mat-button cdkFocusInitial (click)="onNoClick()">Aceptar</button>
+</div>

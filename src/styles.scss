@@ -21,3 +21,7 @@ $color-01: #002c58;
 .mat-spinner circle {
   stroke: $color-01;
 }
+
+.mat-badge-warn .mat-badge-content {
+  background: #00afd2;
+}

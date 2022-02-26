@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    sessionStorage.removeItem('token');
     this.loginForm = new FormGroup(
       {
         email: new FormControl('', [Validators.required, Validators.email])

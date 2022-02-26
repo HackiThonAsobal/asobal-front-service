@@ -1,6 +1,69 @@
 {
   "login": {
-    "email": "example@example.com"
+    "email": "jshdgf@kjhskhf.com"
   },
-  "profile": {}
+  "profile": {},
+  "feed": [
+    {
+      "id": "1",
+      "publicationDate": "01/01/1999",
+      "matchDate?": "01/01/1999",
+      "title": "Titulo del Artículo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et ante lorem. Maecenas id velit odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pulvinar porta urna, sit amet ultrices felis dignissim nec. In cursus consequat lacus in accumsan.",
+      "image": "https://via.placeholder.com/300x180",
+      "type": "MATCH",
+      "teamOneImage?": "https://via.placeholder.com/20x20",
+      "teamTwoImage?": "https://via.placeholder.com/20x20",
+      "likes": "23",
+      "isLiked?": false,
+      "comments?": [
+        {
+          "userName": "Pedro",
+          "description": "Lorem ipsum dolor sit amet",
+          "id": "1"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "publicationDate": "01/01/1999",
+      "matchDate?": "01/01/1999",
+      "title": "Titulo del Artículo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et ante lorem. Maecenas id velit odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pulvinar porta urna, sit amet ultrices felis dignissim       nec. In cursus consequat lacus in accumsan.",
+      "image": "https://via.placeholder.com/300x180",
+      "type": "NEWS",
+      "teamOneImage?": "url",
+      "teamTwoImage?": "url",
+      "likes": "34",
+      "isLiked?": false,
+      "comments?": [
+        {
+          "userName": "Pedro",
+          "description": "Lorem ipsum dolor sit amet",
+          "id": "1"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "publicationDate": "01/01/1999",
+      "matchDate?": "01/01/1999",
+      "title": "Titulo del Artículo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et ante lorem. Maecenas id velit odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pulvinar porta urna, sit amet ultrices felis dignissim       nec. In cursus consequat lacus in accumsan.",
+      "image": "https://via.placeholder.com/300x180",
+      "type": "POST",
+      "teamOneImage?": "url",
+      "teamTwoImage?": "url",
+      "likes": "12",
+      "isLiked?": false,
+      "comments?": [
+        {
+          "userName": "Pedro",
+          "description": "Lorem ipsum dolor sit amet",
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "score": {}
 }
