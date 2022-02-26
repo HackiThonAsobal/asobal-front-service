@@ -34,26 +34,24 @@ export class ProfileComponent implements OnInit, OnDestroy {
         takeUntil(this.onDestroy$)
       )
       .subscribe((event) => {
-        const { data } = event;
+        const data = JSON.parse(event.data);
         this.notificationService.notify(
           {
             title: data.title,
             message: data.description,
-          },
-          10000
+          }
         );
       });
 
     console.log(sessionStorage.getItem('token'));
     if (
-      !sessionStorage.getItem('token') &&
-      sessionStorage.getItem('token') !== null
+      !!sessionStorage.getItem('token')
     ) {
       this.getProfile();
     } else {
       this.activatedRoute.queryParams.subscribe((params) => {
         this.token = params['token'];
-        if (params['token'] !== null) {
+        if (!!params['token']) {
           sessionStorage.setItem('token', params['token']);
         }
       });
@@ -75,6 +73,10 @@ export class ProfileComponent implements OnInit, OnDestroy {
       (data: IProfileResponse) => {
         this.profileData = data;
         console.log('profileData', this.profileData);
+        this.profileService.sendProfile(this.profileData);
+        if (!this.profileData.teamId) {
+          this.router.navigate(['/asobal/profile']);
+        }
       },
       (err) => {
         console.log('Error service profile', err.status);

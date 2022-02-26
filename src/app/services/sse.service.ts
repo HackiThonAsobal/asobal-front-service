@@ -25,7 +25,7 @@ export class SseService {
   }
 
   getServerSendEvents(): Observable<
-    MessageEvent<{ title: string; description: string; type: string }>
+    MessageEvent<string>
   > {
     return new Observable((subscriber) => {
       this.eventSource = this.getEventSource(this.BASE_URL + '/consume');

@@ -2,15 +2,12 @@
   class="snackbar"
 >
   <div class="snackbar-container">
-    <div class="left-icon">
-      <span class="icon"></span>
-    </div>
     <div class="snackbar-content">
       <div class="snackbar-title">{{data.title}}</div>
       <div class="snackbar-subtitle">{{data.message}}</div>
     </div>
     <div class="snackbar-actions">
-      <mat-icon (click)="snackBarRef.dismiss()">close</mat-icon>
+      <mat-icon (click)="dismiss()">close</mat-icon>
     </div>
   </div>
 </div>

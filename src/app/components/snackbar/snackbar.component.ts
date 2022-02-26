@@ -20,4 +20,9 @@ export class SnackbarComponent implements OnInit {
   ngOnInit(): void {
     this.snackbarClass = this.snackBarRef.containerInstance.snackBarConfig.panelClass;
   }
+
+  dismiss() {
+    console.log('dismissing')
+    this.snackBarRef.dismiss();
+  }
 }

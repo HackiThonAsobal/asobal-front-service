@@ -31,6 +31,7 @@ export class NotificationService {
   }
 
   notify(data: any, interval?: number): void {
+    this.closeSnackbar();
     const sb = this.snackBar.openFromComponent(SnackbarComponent, {
       data,
       duration: interval ? interval : 0, // infinite - no close

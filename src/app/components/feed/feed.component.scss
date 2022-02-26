@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   .data {
-    background: #00afd2;
+    background: #393d3f;
     color: white;
     height: 30px;
     line-height: 30px;
@@ -26,7 +26,6 @@
   flex-direction: row;
   justify-content: center;
 }
-
 @media screen and (max-width: 900px) {
   .header-feed {
     display: block;

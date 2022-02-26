@@ -18,6 +18,6 @@ export class ScoreService {
   ) { }
 
   public postScore(body: IScoreRequest): Observable<any> {
-    return this.http.post<IScoreRequest>(this.SCORE, {});
+    return this.http.post<IScoreRequest>(this.SCORE, body);
   }
 }

@@ -23,6 +23,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { FeedComponent } from './components/feed/feed.component';
 import { DialogCommentComponent } from './components/dialog-comment/dialog-comment.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 /**
  * appInt
@@ -49,7 +50,8 @@ registerLocaleData(localePt, 'pt');
     MenuComponent,
     FeedComponent,
     DialogCommentComponent,
-    SnackbarComponent
+    SnackbarComponent,
+    EditProfileComponent
   ],
   imports: [
     AppRoutingModule,
