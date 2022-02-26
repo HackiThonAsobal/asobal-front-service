@@ -2,7 +2,7 @@
   "name": "base",
   "version": "0.0.0",
   "scripts": {
-    "i": "npm i --force",
+    "heroku-prebuild": "npm i --force",
     "all": "npm run test && npm run lint && npm run build",
     "build": "ng build --configuration production",
     "doc": "rimraf reports/Documentation && compodoc --theme stripe -p tsconfig.compodoc.json -d reports/Documentation -n base",
