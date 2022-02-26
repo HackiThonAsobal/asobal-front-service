@@ -14,7 +14,6 @@
     "lint": "ng lint base",
     "mock:server": "json-server --watch db.json",
     "ng": "ng",
-    "prebuild": "npm i",
     "start-ng": "ng serve base",
     "start" : "node server.js",
     "start:proxy:mock:server": "concurrently  -k -s first \"npm run mock:server\" \"npm run start\"",
