@@ -4,6 +4,10 @@
 // Generic styles
 @import '../styles/progress-spinner';
 
+@import '~@angular/material/theming';
+$custom-typography: mat-typography-config($font-family: '"Montserrat", sans-serif;');
+@include mat-core($custom-typography);
+
 // GENERAL
 html {
   min-height: 100%;
@@ -25,4 +29,8 @@ $color-02: #00afd2;
 
 .mat-badge-warn .mat-badge-content {
   background: $color-02;
+}
+
+.mat-snack-bar-container {
+  padding: 0 !important;
 }

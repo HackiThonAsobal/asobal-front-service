@@ -56,7 +56,8 @@ export class ProfileComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-      
+    this.onDestroy$.next();
+    this.onDestroy$.complete();
   }
 
   getProfile() {

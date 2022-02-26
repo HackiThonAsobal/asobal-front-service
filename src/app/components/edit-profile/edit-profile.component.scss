@@ -1,0 +1,20 @@
+.full-width {
+  width: 100%;
+}
+
+.medium-width {
+  width: 40%;
+}
+
+.mat-form-field {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .mat-card {
+    margin: 20px;
+  }
+  .medium-width {
+    width: 100%;
+  }
+}
