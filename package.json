@@ -15,10 +15,12 @@
     "start" : "node server.js",
     "start:proxy:mock:server": "concurrently  -k -s first \"npm run mock:server\" \"npm run start\"",
     "test": "ng test base --no-watch --code-coverage && npm run lint",
-    "test-nowatch": "npm run lint && ng test base --watch=false --browsers ChromeHeadless"
+    "test-nowatch": "npm run lint && ng test base --watch=false --browsers ChromeHeadless",
+    "heroku-postbuild": "npm run build"
   },
   "private": true,
   "dependencies": {
+
     "@angular/animations": "~12.2.16",
     "@angular/cdk": "^12.2.13",
     "@angular/common": "~12.2.16",
