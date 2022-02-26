@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class LoginService {
-  private BASE_URL = this.configService.config.globalConfig.urlApp;
+  private BASE_URL = this.configService.config.globalConfig.urlAppLogin;
   private LOGIN = this.BASE_URL + environment.LOGIN;
 
   constructor(

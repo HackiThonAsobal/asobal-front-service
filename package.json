@@ -10,10 +10,12 @@
     "mock:server": "json-server --watch db.json",
     "ng": "ng",
     "prebuild": "npm i",
-    "start": "ng serve base",
+    "start-ng": "ng serve base",
+    "start" : "node server.js",
     "start:proxy:mock:server": "concurrently  -k -s first \"npm run mock:server\" \"npm run start\"",
     "test": "ng test base --no-watch --code-coverage && npm run lint",
-    "test-nowatch": "npm run lint && ng test base --watch=false --browsers ChromeHeadless"
+    "test-nowatch": "npm run lint && ng test base --watch=false --browsers ChromeHeadless",
+    "heroku-postbuild": "ng build — prod"
   },
   "private": true,
   "dependencies": {
@@ -34,10 +36,12 @@
     "classlist.js": "^1.1.20150312",
     "concurrently": "^6.3.0",
     "core-js": "^3.10.1",
+    "express": "^4.17.3",
     "isomorphic-fetch": "^3.0.0",
     "json-server": "^0.16.0",
     "ng-http-loader": "^9.1.0",
     "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
     "rxjs": "^6.6.0",
     "tslib": "^2.3.0",
     "web-animations-js": "^2.3.2",

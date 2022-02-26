@@ -1,7 +1,8 @@
 {
-    "globalConfig": {
-        "urlApp": "http://localhost:3000",
-        "language": "es"
-    }
-    
+  "globalConfig": {
+    "urlApp": "https://asobal-back-service.herokuapp.com",
+    "urlAppLogin": "https://asobal-login-service.herokuapp.com",
+    "urlAppNotification": "https://asobal-notification-service.herokuapp.com",
+    "language": "es"
+  }
 }
