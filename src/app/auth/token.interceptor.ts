@@ -23,7 +23,7 @@ export class TokenInterceptor implements HttpInterceptor {
     }
 
     request = request.clone({
-      withCredentials: true,
+      withCredentials: false,
       headers
     });
 
